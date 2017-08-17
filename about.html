@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tessel Dashboard, by Keen IO</title>
+  <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/keen-dashboards.css" />
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="navbar-brand" href="C:\Users\ricardo\Desktop\Git\SISMAC2\index.html">SISMAC</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="C:\Users\ricardo\Desktop\Git\SISMAC2\index.html">Inicio</a></li>
+          <li><a href="C:\Users\ricardo\Desktop\Git\SISMAC2\about.html">Sobre</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="chart-wrapper">
+          <div class="chart-stage">
+
+
+
+          <h2>SISMAC (Sistema de Monitoramento Automatizado de Colmeias)</h2>
+    <hr>
+    <p>Neste trabalho foi desenvolvido um sistema distribuído para monitoramento de colmeias com abelhas tendo o objetivo de disponibilizar aos apicultores informações sobre a temperatura interna dentro da colmeia, trazendo assim mais comodidade no manejo das abelhas.</p>
+
+    <p>O sistema foi construído utilizando a infraestrutura Internet das Coisas (IoT) como modelo. A arquitetura desse sistema consiste em sensores de temperatura, que terão função de receptores ambientais;  uma placa arduino, como o receptor dos dados colhidos pelos sensores; plataformas de IoT para recebimento e processamento dos dados e uma aplicação cliente para receber as informações referentes à temperatura da colmeia.</p>
+
+    <h3>Componentes</h3>
+    <p>Os componentes de hardware utilizados neste projeto, foram sensores de temperatura DS18B20, uma ethernet shield w5100 e uma placa arduino mega. O sensor DS18B20 é capaz de medir temperaturas que vão de -55º C até +125º C com uma acurácia de ± 0.5º C. Este sensor vem envolto por uma cápsula de metal que o protege do ambiente externo sem interferir na sua medição essa proteção extra torna o sensor perfeito para ser utilizado em uma colmeia que é um ambiente hostil a circuitos eletrônicos.</p>
+
+    <p> O Mega 2560 é uma placa de microcontrolador baseada no ATmega2560. Possui 54 pinos de entrada/saída digitais (dos quais 15 podem ser utilizados como saídas PWM), 16 entradas analógicas, 4 UARTs (portas seriais de hardware), um oscilador de cristal de 16 MHz O painel Mega 2560 é compatível com a maioria dos shields projetados para o Uno e os antigos painéis Duemilanove ou Diecimila.
+    </p>
+
+    <p>O arduino Ethernet Shield w5100 permite que uma placa arduino se conecte à internet. O w5100 fornece uma pilha de rede (IP) através de TCP e UDP. Ele suporta até quatro conexões de soquete simultâneas. O shield Ethernet se conecta a uma placa arduino usando cabeçalhos longos que se estendem através do escudo. Isso mantém o layout do pino intacto e permite que outro escudo seja empilhado no topo. O Ethernet Shield possui uma conexão RJ-45 padrão, com um transformador de linha integrado e Power over Ethernet habilitado.</p>
+
+    <h3>Plataformas de IoT</h3>
+    <p>Este projeto utilizou plataformas de IoT para armazenamento e processamento dos dados na nuvem. Para comunicação com arduino foi utilizada a plataforma thinger IO essa plataforma oferece uma infra-estrutura de IoT escalável e pronta para conectar vários de dispositivos. Uma das principais vantagens do thinger IO é a possibilidade de conexão com as principais plataformas eletrônicas: arduino, Raspberry Pi, Intel Edison.</p>
+
+    <p>Para análise e processamento dos dados foi utilizada a plataforma Keen IO. A Keen foi projetada para oferecer aos desenvolvedores flexibilidade e extensibilidade de uma pilha de análise personalizada, sem o incômodo e risco de gerenciar a grande infraestrutura de dados. A keen oferece APIs prontas para produção, dando a possibilidade de o desenvolvedor realizar análise robustas de seus dados menos tempo.</p>
+
+    <h3>Arquitetura</h3>
+    <p>Como a arquitetura desse projeto utiliza infraestrutura IoT, o mesmo deve conectar alguma COISA a internet, neste caso uma colmeia de abelhas onde os dados de temperatura são coletados e por um sensor de temperatura conectados a um arduino que irá formatar e enviar esses dados para a plataforma thinger IO utilizada para comunicação com o arduino e armazenamento dos dados provenientes dele. após isso os  dados são repassados para a plataforma Kenn IO que irá realizar a análise e processamento dos dados, após esse dados serem tratados podem ser disponibilizados ao apicultor e é justamente isso que acontece através da aplicação cliente que recebe os dados em forma de medidas e gráficos, a arquitetura pode ser vista na Figura abaixo.</p>
+    
+    <figure>
+      <CENTER><img src="arq.jpg" alt="arquitetura" title="Logo do CSS" /></CENTER>
+      <CENTER><figcaption>Arquitetura do SISMAC</figcaption>
+      </CENTER>
+    </figure>
+
+    <CENTER> <h4>Link do Projeto<a href="https://github.com/Ricardobruno06/SISMAC"> <img src="github-logo-icon-16174.png" height="50" width="50" /></a></h4></CENTER>
+
+         
+
+            <p>
+
+            <p align="center" style="margin-top: 0; margin-bottom: 0"> </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+
+
+    <hr>
+
+   <center><p>Power by Ricardo Bruno</p></center> 
+
+  </div>
+
+  <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="assets/lib/holderjs/holder.js"></script>
+  <script>
+    Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });
+  </script>
+  <script type="text/javascript" src="assets/lib/jquery-knob/dist/jquery.knob.min.js"></script>
+
+  <script type="text/javascript" src="assets/lib/keen-js/dist/keen.min.js"></script>
+  <script type="text/javascript" src="assets/js/meta.js"></script>
+  <script type="text/javascript" src="dashboard.js"></script>
+
+</body>
+</html>

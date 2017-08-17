@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tessel Dashboard, by Keen IO</title>
+  <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/keen-dashboards.css" />
+
+  <script LANGUAGE="JavaScript">
+      <!-- Begin
+      function Login(){
+      var done=0;
+      var username=document.login.username.value;
+      username=username.toLowerCase();
+      var password=document.login.password.value;
+      password=password.toLowerCase();
+      if (username=="leoberbert" && password=="leoberbert") { window.location="http://www.twitter.com"; done=1; }
+      if (username=="outro" && password=="outrosenha") { window.location="http://www.seu_site.com.br"; done=1; }
+      if (username=="outro" && password=="outrasenha") { window.location="http://www.seu_site.com.br"; done=1; }
+      if (done==0) { alert("Senha ou Usuário inválido."); }
+      }
+      // End -->
+  </script>
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="navbar-brand" href="C:\Users\ricardo\Desktop\Git\SISMAC\index.html">SISMAC</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="https://keen.io">Inicio</a></li>
+          <li><a href="https://keen.io/team">Sobre</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="chart-wrapper">
+          <div class="chart-stage">
+
+          <center>
+            <form name=login>
+            <table width=225 border=1 cellpadding=3 height="123">
+            <tr><td colspan=2 height="13"><center>
+              <p><font face="Arial Black">Área restrita:</font></p>
+              </center></td></tr>
+            <tr><td height="22">
+              <p align="right"><font face="Verdana" style="font-size: 8pt; font-weight:700">
+              <img border="0" src="Usuário.gif" width="80" height="80" align="left"></font><p align="right">
+              <br>
+              <font face="Verdana" style="font-size: 8pt; font-weight:700">
+              <br>
+              Usuário:</font></td>
+              <td height="22" align="center">
+              <input type=text name=username size="20"></td></tr>
+            <tr><td height="22">
+              <p align="right"><font style="font-size: 8pt" face="Verdana">
+              <b><img border="0" src="Senha.gif" align="left" width="80" height="80"><br>
+              <br>
+              Senha</b>:</font></td><td height="22">
+              <input type=text name=password size="20"></td></tr>
+            <tr><td colspan=2 align=center height="26"><input type=button value="Entrar" onClick="Login()"></td></tr>
+            </table>
+            </form>
+            </center>
+
+            <p>
+
+            <p align="center" style="margin-top: 0; margin-bottom: 0"> </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+
+
+    <hr>
+
+    <p class="small text-muted">Built with &#9829; by <a href="https://keen.io">Keen IO</a></p>
+
+  </div>
+
+  <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="assets/lib/holderjs/holder.js"></script>
+  <script>
+    Holder.add_theme("white", { background:"#fff", foreground:"#a7a7a7", size:10 });
+  </script>
+  <script type="text/javascript" src="assets/lib/jquery-knob/dist/jquery.knob.min.js"></script>
+
+  <script type="text/javascript" src="assets/lib/keen-js/dist/keen.min.js"></script>
+  <script type="text/javascript" src="assets/js/meta.js"></script>
+  <script type="text/javascript" src="dashboard.js"></script>
+
+</body>
+</html>
